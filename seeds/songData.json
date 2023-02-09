@@ -1,10 +1,14 @@
 [
     {
-      "song": "Flowers",
-      "artist": "Miley Cyrus"
+      "song_name": "Flowers",
+      "artist": "Miley Cyrus",
+      "score": 5,
+      "description": "Great!"
     },
     {
-        "song": "I like you",
-        "artist": "Post Malon"
+        "song_name": "I like you",
+        "artist": "Post Malon",
+        "score": 4,
+        "description": "fun song"
       }
 ]

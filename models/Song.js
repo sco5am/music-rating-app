@@ -11,11 +11,11 @@ Song.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    song_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    title: {
+    artist: {
       type: DataTypes.STRING,
     },
     score: {
