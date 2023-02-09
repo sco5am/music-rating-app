@@ -3,11 +3,12 @@ const newRatingHandler = async (event) => {
   //gets valude of song name/rating
     const name = document.querySelector('#song-name').value.trim();
     const rating = document.querySelector('#song-rating').value.trim();
+    const description = document.querySelector('#song-desc').value.trim();
   
-    if (name && rating) {
+    if (name && rating && description) {
       const response = await fetch(`/api/song`, {
         method: 'POST',
-        body: JSON.stringify({ name, rating }),
+        body: JSON.stringify({ name, rating, description }),
         headers: {
           'Content-Type': 'application/json',
         },
