@@ -5,7 +5,7 @@ const newRatingHandler = async (event) => {
     const rating = document.querySelector('#song-rating').value.trim();
   
     if (name && rating) {
-      const response = await fetch(`/api/songs`, {
+      const response = await fetch(`/api/song`, {
         method: 'POST',
         body: JSON.stringify({ name, rating }),
         headers: {
@@ -26,7 +26,7 @@ const newRatingHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/songs/${id}`, {
+      const response = await fetch(`/api/song/${id}`, {
         method: 'DELETE',
       });
   
