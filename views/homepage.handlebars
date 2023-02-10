@@ -2,15 +2,21 @@
 {{#each songs as |song| }}
 <div class="row mb-4 project">
   <div class="col-md-5">
-    <h2>
-      <a href="/song/{{song.id}}">{{song.name}}</a>
-    </h2>
+    <h3>
+      <a href="/song/{{song.id}}">{{song.song_name}}</a>
+    </h3>
 
     {{!-- <p>Created by {{song.user.name}} on {{format_date project.date_created}}</p> --}}
   </div>
   <div class="col-md-7">
     <p>
       {{song.description}}
+    </p>
+    <p class="rating">
+      Rating: {{song.score}}
+    </p>
+    <p class="author">
+      Posted by: {{user.name}}
     </p>
   </div>
 </div>
