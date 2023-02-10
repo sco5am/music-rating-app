@@ -7,6 +7,7 @@
   <title>Music Rating App</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link src="https://code.jquery.com/jquery-3.6.3.js">
 </head>
 
 <body>
@@ -30,10 +31,6 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <div id="rater">
-      <span class="clear-rating"></span>
-      <button id="rater6-button"></button>
-    </div>
     <footer>
       
     </footer>
@@ -43,8 +40,7 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  <script src="/utils/rater.js"></script>
-  
+
 </body>
 
 </html>
