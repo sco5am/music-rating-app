@@ -3,14 +3,21 @@
 <div class="row mb-4 project">
   <div class="col-md-5">
     <h2>
-      <a href="/song/{{song.id}}">{{song.name}}</a>
+      Song name:
+      <a href="/song/{{song.id}}">{{song.song_name}}</a>
     </h2>
 
     {{!-- <p>Created by {{song.user.name}} on {{format_date project.date_created}}</p> --}}
   </div>
   <div class="col-md-7">
+     <p>
+    Song artist:  {{song.artist}}
+    </p>
     <p>
-      {{song.description}}
+    Score:  {{song.score}}
+    </p>
+    <p>
+  Description    {{song.description}}
     </p>
   </div>
 </div>

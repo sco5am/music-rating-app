@@ -1,8 +1,8 @@
-const router = require('express').Router();
-const { Song } = require('../../models');
-const withAuth = require('../../utils/auth');
+const router = require("express").Router();
+const { Song } = require("../../models");
+const withAuth = require("../../utils/auth");
 
-router.post('/', withAuth, async (req, res) => {
+router.post("/", withAuth, async (req, res) => {
   try {
     const newSong = await Song.create({
       ...req.body,
@@ -15,7 +15,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete("/:id", withAuth, async (req, res) => {
   try {
     const songData = await Song.destroy({
       where: {
@@ -26,8 +26,25 @@ router.delete('/:id', withAuth, async (req, res) => {
 
     if (!songData) {
       res.status(404).json({
-        message: 'Oops! No song with this id!',
+        message: "Oops! No song with this id!",
       });
+      return;
+    }
+    res.status(200).json(songData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.put("/:id", withAuth, async (req, res) => {
+  try {
+    const songData = await Song.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!songData) {
+      res.status(404).json({ message: "No song found with this id!" });
       return;
     }
     res.status(200).json(songData);

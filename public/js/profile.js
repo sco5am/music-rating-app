@@ -1,29 +1,7 @@
-const newRatingHandler = async (event) => {
-    event.preventDefault();
-  //gets valude of song name/rating
-    const name = document.querySelector('#song-name').value.trim();
-    const rating = document.querySelector('#song-rating').value.trim();
-    const description = document.querySelector('#song-desc').value.trim();
-  
-    if (name && rating && description) {
-      const response = await fetch(`/api/song`, {
-        method: 'POST',
-        body: JSON.stringify({ name, rating, description }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-  
-      if (response.ok) {
-        document.location.replace('/profile');
-      } else {
-        alert('Failed to create song rating');
-      }
-    }
-  };
-  
-//deletes song rating 
+
+// deletes song rating 
   const delButtonHandler = async (event) => {
+
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
@@ -39,11 +17,37 @@ const newRatingHandler = async (event) => {
     }
   };
   
-  document
-    .querySelector('.new-song-rating')
-    .addEventListener('submit', newRatingHandler);
+  const updateSong = async (event) => {
+    event.preventDefault();
+    // console.log(event.target);
+    const id = event.target.getAttribute('data-update-id');
+    console.log(id);
+    const score = document.querySelector('#updated-score-content').value.trim();
+    const description = document.querySelector('#updated-description-content').value.trim();
+   
+    if (score && description) {
+      //localhost:3001/api/posts/:id
+      const response = await fetch(`/api/song/${id}`, {
+        method: 'PUT',
+        body: JSON.stringify({ score, description }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
   
+      if (response.ok) {
+        document.location.replace('/profile');
+      } else {
+        alert('Failed to update post');
+      }
+    }
+  };
+
+// delete
   document
-    .querySelector('.song-list')
-    .addEventListener('click', delButtonHandler);
-  
+  .querySelector('.song-list')
+  .addEventListener('click', delButtonHandler);
+// update
+  document
+  .querySelector('#updateBtn')
+  .addEventListener('click', updateSong);
