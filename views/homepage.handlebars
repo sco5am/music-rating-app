@@ -7,7 +7,7 @@
       <a href="/song/{{song.id}}">{{song.song_name}}</a>
     </h2>
 
-    {{!-- <p>Created by {{song.user.name}} on {{format_date project.date_created}}</p> --}}
+   <p> Created by {{song.user.name}} on {{format_date song.date_created}}</p> 
   </div>
   <div class="col-md-7">
      <p>
@@ -17,7 +17,7 @@
     Score:  {{song.score}}
     </p>
     <p>
-  Description    {{song.description}}
+  Description: {{song.description}}
     </p>
   </div>
 </div>
