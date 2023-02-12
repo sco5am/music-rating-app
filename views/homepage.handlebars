@@ -5,12 +5,17 @@
     <h3>
       <a href="/song/{{song.id}}">{{song.song_name}}</a>
     </h3>
-
-    {{!-- <p>Created by {{song.user.name}} on {{format_date project.date_created}}</p> --}}
+   <p> Created by {{song.user.name}} on {{format_date song.date_created}}</p> 
   </div>
   <div class="col-md-7">
+     <p>
+    Song artist:  {{song.artist}}
+    </p>
     <p>
-      {{song.description}}
+    Score:  {{song.score}}
+    </p>
+    <p>
+  Description: {{song.description}}
     </p>
     <p class="rating">
       Rating: {{song.score}}

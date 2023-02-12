@@ -1,6 +1,15 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{description}}</p>
-  {{!-- <p>Created by {{user.name}} on {{format_date date_created}}</p> --}}
+
   
-</div>
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h1> Rated by : {{user.name}}</h1>
+        <h4><a href="/post/{{id}}">{{song_name}}</a></h4>
+         Song artist:  {{artist}}
+             Score:  {{score}}
+              Description    {{description}}
+              Date Created: {{format_date date_created}}
+      </div>
+      <div class="col-md-4">
+       
+      </div>
+    </div>

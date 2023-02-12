@@ -10,7 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sco5am/music-rating-app.git"
+    "url": "git+https://github.com/sco5am/music-rating-app.git",
+    "engines": {
+      "node": "16.x"
+  }
+   
   },
   "author": "",
   "license": "ISC",
@@ -28,9 +32,11 @@
     "express-handlebars": "^6.0.7",
     "express-session": "^1.17.3",
     "mysql2": "^3.1.2",
+    "inquirer": "^9.1.4",
     "normalize.css": "^8.0.1",
     "rater-js": "^1.0.1",
     "sequelize": "^6.28.0",
+    "handlebars": "^4.7.7",
     "sqlite3": "^5.1.4"
   }
 }

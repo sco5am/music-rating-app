@@ -79,4 +79,29 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+
+router.get('/edit/:id', async (req, res) => {
+  try {
+    const songData = await Song.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    const song = songData.get({ plain: true });
+
+    res.render('edit-song', {
+      ...song,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+
 module.exports = router;
