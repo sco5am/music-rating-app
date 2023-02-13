@@ -1,4 +1,4 @@
-# music-rating-app
+# Music Rating Application 🎶
 Music lovers are able to connect and share their opinions on songs when using the Music Rating Application. When users navigate to the application, they are presented with a list of trending songs, invited to create an account to sign-in, add songs, rate songs and leave comments related to the music. 🎵
 
 ## Description
