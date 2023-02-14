@@ -9,7 +9,7 @@
         <label for="artist=detail">Artist: {{artist}}</label>
       </div>
     <div class="form-group">
-        <label for="score-detail">Score: {{score}}</label>
+        <label for="score-detail">Score: <div class="rate3" id="rate2" data-rate-value="{{song.score}}" ></div></label>
       </div>
   <div class="form-group">
         <label for="description-detail">Description: {{description}}</label>
@@ -27,8 +27,8 @@
    
       </div>
       <div class="form-group">
-        <label for="score">Score: </label>
-        <textarea class="form-input" id="updated-score-content" name="score">{{score}}</textarea>
+        <label>Score: </label>
+        <div class="rate2" id="rate2" ></div>
       </div>
       <div class="form-group">
         <label for="description">Description: </label>

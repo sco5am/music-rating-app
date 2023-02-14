@@ -1,5 +1,4 @@
 const newSongRating = async (event) => {
-  console.debug({event})
     event.preventDefault();
   //gets valude of song name/rating
     const song_name = document.querySelector('#song-name').value.trim();

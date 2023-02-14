@@ -5,7 +5,7 @@
         <h1> Rated by : {{user.name}}</h1>
         <h4><a href="/post/{{id}}">{{song_name}}</a></h4>
          Song artist:  {{artist}}
-             Score:  {{score}}
+             Score:  <div class="rate3" id="rate2" data-rate-value="{{song.score}}" ></div>
               Description    {{description}}
               Date Created: {{format_date date_created}}
       </div>

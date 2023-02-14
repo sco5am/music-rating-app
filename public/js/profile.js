@@ -21,8 +21,7 @@
     event.preventDefault();
     // console.log(event.target);
     const id = event.target.getAttribute('data-update-id');
-    console.log(id);
-    const score = document.querySelector('#updated-score-content').value.trim();
+    const score = $('#rate2').data('rateValue');
     const description = document.querySelector('#updated-description-content').value.trim();
    
     if (score && description) {
