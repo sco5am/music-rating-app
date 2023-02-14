@@ -48,6 +48,6 @@
   .querySelector('.song-list')
   .addEventListener('click', delButtonHandler);
 // update
-  document
-  .querySelector('#updateBtn')
-  .addEventListener('click', updateSong);
+   document
+   .querySelector('#updateBtn')
+   .addEventListener('click', updateSong);
