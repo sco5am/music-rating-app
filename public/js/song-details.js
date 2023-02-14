@@ -24,7 +24,14 @@ async function search() {
     }
   );
   const data = await response.json();
-  console.log(data);
+
+  let imgLink = data.albums.items[0].data.coverArt.sources[0].url;
+
+  let newDiv = document.createElement('div');
+  let imgHtml = `<img src='${imgLink}'>`;
+
+  newDiv.innerHTML = imgHtml;
+  photoBox.appendChild(newDiv);
 }
 
 search();
