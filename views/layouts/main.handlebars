@@ -21,10 +21,22 @@
                 change_once: false,
                 readonly: false,
             }
+            var choices = {
+                max_value: 10,
+                step_size: 0.5,
+                selected_symbol_type: 'hearts',
+                initial_value: 3,
+                update_input_field_name: $("#input2"),
+                change_once: false,
+                readonly: true,
+            }
+
             $(".rate").rate();
 
 
             $(".rate2").rate(options);
+
+            $(".rate3").rate(choices);
 
             $(".rate2").on("change", function(ev, data){
                 console.log(data.from, data.to);
@@ -108,7 +120,6 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-
 </body>
 
 </html>

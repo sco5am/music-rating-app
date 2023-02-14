@@ -3,8 +3,8 @@
     <h1>Song: {{song_name}}</h1>
     <h2> Rated by: {{user.name}}</h2>
     <ul id="song-details">
-      <li>Song artist: {{artist}}</li>
-      <li> Score: {{score}}</li>
+      <li> Song artist: {{artist}}</li>
+      <li class="rate3" id="rate2" data-rate-value="{{song.score}}"> score: </li>
       <li> Description: {{description}}</li>
       <li> Date Created: {{format_date date_created}}</li>
     </ul>
