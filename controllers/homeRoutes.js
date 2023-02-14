@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all songs and JOIN with user data
+    // Get all songs and JOIN with user data ordering with the score of the song
     const songData = await Song.findAll({
         order: [['score', 'DESC']]
    });
