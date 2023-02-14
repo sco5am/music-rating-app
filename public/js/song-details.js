@@ -11,3 +11,11 @@ const artist = document
   .trim();
 
 const fullSearch = `${songTitle}%20${artist}`;
+
+const options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': 'd7c6b4bfefmsh543bab1a89406f9p15f96bjsn733aef5dbccc',
+    'X-RapidAPI-Host': 'spotify23.p.rapidapi.com',
+  },
+};
