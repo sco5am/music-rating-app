@@ -1,12 +1,17 @@
-<div class="row mb-2">
-  <div class="col-md-8">
-    <h1>Song: {{song_name}}</h1>
-    <h2> Rated by: {{user.name}}</h2>
-    <ul id="song-details">
-      <li> Song artist: {{artist}}</li>
-      <li class="rate3" id="rate2" data-rate-value="{{song.score}}"> score: </li>
-      <li> Description: {{description}}</li>
-      <li> Date Created: {{format_date date_created}}</li>
-    </ul>
+<div class='row mb-2'>
+  <div class='col-md-8'>
+    <h1 class='song-title'>{{song_name}}</h1>
+    <h3>Song artist:</h3>
+    <p class='artist'>{{artist}}</p>
+    <h3>Score:</h3>
+    <p class='rate3' id='rate2' data-rate-value='{{song.score}}'></p>
+    <h3>Description</h3>
+    <p>{{description}}</p>
+    <h4>Date Created:</h4>
+    <p>{{format_date date_created}}</p>
+    <p> Rated by: {{user.name}}</p>
   </div>
+  <div class='col-md-4' id='photo-box'></div>
 </div>
+
+<script src='/js/song-details.js'></script>
