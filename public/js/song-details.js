@@ -9,3 +9,5 @@ const artist = document
   .innerHTML.split(' ')
   .join('%20')
   .trim();
+
+const fullSearch = `${songTitle}%20${artist}`;
