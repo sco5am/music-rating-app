@@ -18,11 +18,11 @@ Song.init(
     artist: {
       type: DataTypes.STRING,
     },
-    score: {
-        type: DataTypes.INTEGER,
-    },
     description: {
       type: DataTypes.STRING,
+    },
+    score: {
+      type: DataTypes.INTEGER,
     },
     date_created: {
       type: DataTypes.DATE,
