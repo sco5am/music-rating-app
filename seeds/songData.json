@@ -3,12 +3,12 @@
       "song_name": "Flowers",
       "artist": "Miley Cyrus",
       "score": 5,
-      "description": "Great!"
+      "review": "Great!"
     },
     {
         "song_name": "I like you",
         "artist": "Post Malon",
         "score": 4,
-        "description": "fun song"
+        "review": "fun song"
       }
 ]
