@@ -3,13 +3,13 @@ const newSongRating = async (event) => {
   //gets valude of song name/rating
     const song_name = document.querySelector('#song-name').value.trim();
     const artist = document.querySelector('#artist').value.trim();
-    const description = document.querySelector('#song-desc').value.trim();
+    const review = document.querySelector('#song-desc').value.trim();
     const score = $('#rate2').data('rateValue')
   
-    if (song_name && artist && description && score) {
+    if (song_name && artist && review && score) {
       const response = await fetch(`/api/song`, {
         method: 'POST',
-        body: JSON.stringify({ song_name, artist, description, score}),
+        body: JSON.stringify({ song_name, artist, review, score}),
         headers: {
           'Content-Type': 'application/json',
         },

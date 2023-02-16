@@ -1,8 +1,8 @@
-# Music Rating Application 🎶
+# Sound Shelf: A Music Rating Application 🎶
 Music lovers are able to connect and share their opinions on songs when using the Music Rating Application. When users navigate to the application, they are presented with a list of trending songs, invited to create an account to sign-in, add songs, rate songs and leave comments related to the music. 🎵
 
 ## Description
-This application allows users to dynamically navigate a Heroku deployed application that includes user account sign up, login, functionality to add/rate songs as well as leave comments. This application follows the MVC paradigm with use of routing, Handlebars.js, Sequelize and express session for authentication. Average-rating package utlized for display of rating. 
+This application allows users to dynamically navigate a Heroku deployed application that includes user account sign up, login, functionality to add/rate songs as well as leave comments. This application follows the MVC paradigm with use of routing, Handlebars.js, Sequelize and express session for authentication. Rater.js package utlized for display of rating. 
 
 
 ![Mockup of Music Rating App]()
@@ -22,7 +22,7 @@ This application allows users to dynamically navigate a Heroku deployed applicat
 - [Questions](#questions)
 
 ## Installation
-Node.js (v16), MySQL, Express.js, Sequelize, inquirer, dotenv, bcrypt, express-handlebars, express-session, Heroku, average-rating 
+Node.js (v16), MySQL, Express.js, Sequelize, inquirer, dotenv, bcrypt, express-handlebars, express-session, Heroku, Rater.js 
 
 ## Usage
 Navigate to deployed Heroku page: 
