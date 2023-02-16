@@ -18,7 +18,7 @@ Song.init(
     artist: {
       type: DataTypes.STRING,
     },
-    description: {
+    review: {
       type: DataTypes.STRING,
     },
     score: {

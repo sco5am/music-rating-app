@@ -23,15 +23,15 @@
     const id = event.target.getAttribute('data-update-id');
 
     console.log(id);
-    const description = document.querySelector('#updated-description-content').value.trim();
+    const review = document.querySelector('#updated-review-content').value.trim();
    const score= $("#rate2").data("setAdditionalData");
 
 
-    if (score || description) {
+    if (score || review) {
       //localhost:3001/api/posts/:id
       const response = await fetch(`/api/song/${id}`, {
         method: 'PUT',
-        body: JSON.stringify({score, description }),
+        body: JSON.stringify({score, review }),
         headers: {
           'Content-Type': 'application/json',
         },
