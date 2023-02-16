@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/sco5am/music-rating-app.git",
     "engines": {
-      "node": "18.12.1"
+      "node": "16.x"
   }
    
   },
