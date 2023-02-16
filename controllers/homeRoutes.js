@@ -6,6 +6,12 @@ router.get('/', async (req, res) => {
   try {
     // Get all songs and JOIN with user data ordering with the score of the song
     const songData = await Song.findAll({
+      include: [
+        {
+          model: User, 
+          attributes: ['name'],
+        },
+      ],
         order: [['score', 'DESC']]
    });
     // Serialize data so the template can read it
