@@ -5,11 +5,11 @@ Music lovers are able to connect and share their opinions on songs when using th
 This application allows users to dynamically navigate a Heroku deployed application that includes user account sign up, login, functionality to add/rate songs as well as leave comments. This application follows the MVC paradigm with use of routing, Handlebars.js, Sequelize and express session for authentication. Rater.js package utlized for display of rating. 
 
 
-![Mockup of Music Rating App]()
+![Mockup of Music Rating App](/soundShelfMockup.png)
 
 [GitHub Repo](https://github.com/sco5am/music-rating-app)
 
-[Deployed Application](https://)
+[Deployed Application](https://https://glacial-ridge-68667.herokuapp.com/)
 
 
 ## Table of Contents
@@ -25,7 +25,7 @@ This application allows users to dynamically navigate a Heroku deployed applicat
 Node.js (v16), MySQL, Express.js, Sequelize, inquirer, dotenv, bcrypt, express-handlebars, express-session, Heroku, Rater.js 
 
 ## Usage
-Navigate to deployed Heroku page: 
+Navigate to deployed [Heroku page](https://glacial-ridge-68667.herokuapp.com/)
 
 ## License
 MIT Copyright (c) 2023 
