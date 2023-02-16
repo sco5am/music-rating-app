@@ -1,22 +1,59 @@
+html {
+  height: 100%;
+}
+body {
+  background-color:rgb(226, 218, 218);
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 header, .project:not(:last-child) {
-    border-bottom: 1px solid rgb(215, 148, 148);
+    border-bottom: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-  
+  .h1Main {
+    color:rgb(255, 255, 255);
+    font-size: 300%;
+    text-shadow: 2px 2px black;
+  }
+ 
+ p {
+    padding: .5%;
+    color:rgb(255, 255, 255);
+    font-size: 250%;
+    text-shadow: 1px 1px black;
+  }
+  .homepage, .loginBtn {
+    color:#681705;
+    font-size: 200%;
+    text-shadow: 2px 2px black;
+  }
   .no-button {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
-    color: #63edcb;
+    color: #e4ac3b;
     text-decoration: none;
-    font-size: 100%;
+    font-size: 200%;
   }
   
   .no-button:hover {
-    color: #065b83;
+    color: #681705;
     text-decoration: underline;
   }
 
   #song-details{
     list-style: none;
   }
+#image{
+  background-image: url("https://cdn.pixabay.com/photo/2022/03/21/19/53/music-7083855_960_720.jpg");
+  opacity: 0.85;
+}
+.welcome{
+  background-color: rgb(172, 172, 225);
+}
