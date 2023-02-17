@@ -5,7 +5,7 @@ Music lovers are able to connect and share their opinions on songs when using th
 This application allows users to dynamically navigate a Heroku deployed application that includes user account sign up, login, functionality to add/rate songs as well as leave comments. This application follows the MVC paradigm with use of routing, Handlebars.js, Sequelize and express session for authentication. Rater.js package utlized for display of rating. 
 
 
-![Mockup of Music Rating App](/soundShelfMockup.png)
+![Mockup of Music Rating App](/soundshelfmockup2.png)
 
 [GitHub Repo](https://github.com/sco5am/music-rating-app)
 
