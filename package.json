@@ -10,10 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sco5am/music-rating-app.git",
-    "engines": {
-      "node": "16.x"
-    }
+    "url": "git+https://github.com/sco5am/music-rating-app.git"
   },
   "author": "",
   "license": "ISC",
@@ -40,5 +37,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+    "engines": {
+      "node": "16.x"
+    }
 }
