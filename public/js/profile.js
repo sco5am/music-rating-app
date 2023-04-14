@@ -24,10 +24,10 @@
 
     console.log(id);
     const review = document.querySelector('#updated-review-content').value.trim();
-   const score= $("#rate2").data("setAdditionalData");
+    const score = $("#rate2").data("rateValue");
 
 
-    if (score || review) {
+    if (score && review) {
       //localhost:3001/api/posts/:id
       const response = await fetch(`/api/song/${id}`, {
         method: 'PUT',
