@@ -29,7 +29,7 @@ async function search() {
   let songLink = data.topResults.items[1].data.albumOfTrack.sharingInfo.shareUrl;
 
   let newDiv = document.createElement('div');
-  let imgHtml = `<img src='${imgLink}'><a target='_blank' href='${songLink}'>listen on spotify!</a> `;
+  let imgHtml = `<img src='${imgLink}'><a target='_blank' href='${songLink}'> <hr> listen on spotify!</a> `;
 
   newDiv.innerHTML = imgHtml;
   photoBox.appendChild(newDiv);
